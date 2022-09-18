@@ -32,7 +32,7 @@ Sunset services obsolete (destroyed?). Fresh data sources wanted :)
 
 ## DIY
 
-Let some Weather service to bring cool Sunrize/Sunsetdata for this little small thing.. =)
+Let some Weather service to bring cool Sunrize/Sunset time data for this little small thing.. =)
 
 
 ## Author
