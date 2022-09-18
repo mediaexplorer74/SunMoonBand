@@ -23,7 +23,7 @@
                 <Image Margin="0,20,0,20"  Source="/Assets/About.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" Width="64" Height="64" />
                 <TextBlock Text="{Binding Version}" FontFamily="Segoe WP Light" FontSize="20" />
                 <TextBlock Text="written by Russell Libby" FontFamily="Segoe WP Light" FontSize="20" />
-                <HyperlinkButton Content="{Binding Email}" Foreground="{StaticResource PhoneAccentBrush}" FontFamily="Segoe WP Light" FontSize="20" HorizontalAlignment="Left" Click="EmailClicked"/>
+                <HyperlinkButton Content="{Binding Email}" Foreground="{StaticResource AppBarItemForegroundThemeBrush}" FontFamily="Segoe WP Light" FontSize="20" HorizontalAlignment="Left" Click="EmailClicked"/>
                 <TextBlock Text="This program is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a paticular purpose." Margin="0,20,0,0" FontFamily="Segoe WP Light" FontSize="20" TextWrapping="Wrap" />
                 <TextBlock Margin="0,30,0,20" Text="{Binding LastSync}" FontFamily="Segoe WP Light" FontSize="20" TextWrapping="Wrap" />
             </StackPanel>

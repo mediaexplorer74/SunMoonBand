@@ -43,14 +43,14 @@ namespace SunMoonBand.Pages
         /// </summary>
         /// <param name="sender">The sender of the event.</param>
         /// <param name="e">The back key press event arguments.</param>
-        private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
+        private void HardwareButtons_BackPressed(object sender, EventArgs e) // BackPressedEventArgs obsolete?
         {
             var rootFrame = Window.Current.Content as Frame;
 
             if (rootFrame == null || !rootFrame.CanGoBack) return;
 
             rootFrame.GoBack();
-            e.Handled = true;
+            //e.Handled = true;
         }
 
         #endregion
@@ -77,7 +77,7 @@ namespace SunMoonBand.Pages
         {
             InitializeComponent();
 
-            HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+            //HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 
         #endregion

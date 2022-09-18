@@ -16,7 +16,7 @@ using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
-using SunMoonBand.Theme;
+//using SunMoonBand.Theme;
 using SunMoonBandCommon;
 using Microsoft.Band;
 using Microsoft.Band.Tiles;
@@ -674,7 +674,7 @@ namespace SunMoonBand.Pages
             if (e == null) throw new ArgumentNullException("e");
 
             GetTaskRegistration();
-            ThemeManager.SetThemeColor((Color)Application.Current.Resources["ThemeColor"]);
+            //ThemeManager.SetThemeColor((Color)Application.Current.Resources["ThemeColor"]);
 
             DataContext = _viewModel = App.Current;
 

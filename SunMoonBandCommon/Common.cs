@@ -171,10 +171,15 @@ namespace SunMoonBandCommon
         {
             get
             {
-                var localSettings = ApplicationData.Current.LocalSettings;
-                var useAzure = (localSettings.Values["UseAlternateSource"] != null) && (bool)localSettings.Values["UseAlternateSource"];
+                ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
 
-                return useAzure ? @"http://sunmoonbandazure.azurewebsites.net/api/data?form=2&ID=AA&year={0}&month={1}&day={2}&place=&lon_sign={3}&lon_deg={4}&lon_min={5}&lat_sign={6}&lat_deg={7}&lat_min={8}&tz={9}&tz_sign={10}" : @"http://aa.usno.navy.mil/rstt/onedaytable?form=2&ID=AA&year={0}&month={1}&day={2}&place=&lon_sign={3}&lon_deg={4}&lon_min={5}&lat_sign={6}&lat_deg={7}&lat_min={8}&tz={9}&tz_sign={10}";
+                bool useAzure = (localSettings.Values["UseAlternateSource"] != null) 
+                    && (bool)localSettings.Values["UseAlternateSource"];
+
+                return useAzure 
+                    ? @"http://sunmoonbandazure.azurewebsites.net/api/data" +
+                      @"?form=2&ID=AA&year={0}&month={1}&day={2}&place=&lon_sign={3}&lon_deg={4}&lon_min={5}&lat_sign={6}&lat_deg={7}&lat_min={8}&tz={9}&tz_sign={10}" 
+                    : @"http://aa.usno.navy.mil/rstt/onedaytable?form=2&ID=AA&year={0}&month={1}&day={2}&place=&lon_sign={3}&lon_deg={4}&lon_min={5}&lat_sign={6}&lat_deg={7}&lat_min={8}&tz={9}&tz_sign={10}";
             }    
         }
 

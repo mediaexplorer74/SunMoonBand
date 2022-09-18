@@ -32,7 +32,11 @@
 
         <Grid Grid.Row="1" Margin="19,10,19,0">
             <ProgressBar Margin="0,-15,0,0"  IsIndeterminate="True" Visibility="{Binding SyncVisibility}" Foreground="White" VerticalAlignment="Top"/>
-            <ListBox HorizontalContentAlignment="Stretch" ItemsSource="{Binding Observations}" Margin="0,10" Background="#FF552D91" BorderBrush="#FF552D91" Foreground="White" ItemContainerStyle="{StaticResource BandListContainerStyle}">
+            <ListBox HorizontalContentAlignment="Stretch" ItemsSource="{Binding Observations}" Margin="0,10" 
+                     Background="#FF552D91" 
+                     BorderBrush="#FF552D91" 
+                     Foreground="White" 
+                >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Margin="0,4,0,4" HorizontalAlignment="Stretch" >
