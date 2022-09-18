@@ -19,9 +19,9 @@ as well as illumination percentage. All data provided by the US Naval Observator
 
 ## My 2 cents
 
-- Research of original WP8 code.
-- Transform in W10MCode (Min. os build: 15041).
-- Minimal testing :)
+- Researching of original WP8 code;
+- Code transformation into W10M ver. (Min. os build: 15041... but 14393 with NP));
+- Minimal UI testing :)
 
 
 ## Problems / Bugs
